@@ -34,7 +34,47 @@
     1,2:3
     결과 : 6
 
-**구현할 기능 목록**
+## 프로그래밍 요구 사항
+- Node.js 20.17.0 버전에서 실행 가능해야 한다.
+- 프로그램 실행의 시작점은 App.js의 run()이다.
+- ```package.json``` 파일은 변경할 수 없으며, 제공된 라이브러리와 스타일 라이브러리 이외의 외부 라이브러리는 사용하지 않는다.
+- 프로그램 종료 시 ```process.exit()```를 호출하지 않는다.
+- 프로그래밍 요구 사항에서 달리 명시하지 않는 한 파일, 패키지 등의 이름을 바꾸거나 이동하지 않는다.
+- 자바스크립트 코드 컨벤션을 지키면서 프로그래밍한다.
+  - 기본적으로 [JavaScript Style Guide](https://github.com/woowacourse/woowacourse-docs/tree/main/styleguide/javascript)를 원칙으로 한다.
+
+## 시작 순서
+1. 프로젝트를 자신의 계정으로 fork 하기
+2. fork한 저장소를 자신의 컴퓨터로 clone하기
+```
+https://github.com/minwoonggi/javascript-calculator-7.git
+```
+3. 기능 구현을 위한 브랜치 생성
+```
+git checkout -b minwoonggi
+```
+4. 통합 개발환경(IDE)으로 가져오기
+vscode로 시작
+5. 기능 구현
+
+## 구현할 기능 목록
 -  feat: ','와':'을 구분자로 가지는 문자열의 숫자의 합 반환하는 기능
 -  feat: 커스텀 구분자 기준으로 숫자의 합 반환하는 기능
 -  feat: 예외는 전부 ERROR 처리하는 기능
+
+6. 기능 구현 후 add, commit
+```
+git status // 변경된 파일 확인
+git add -A(또는 .) // 변경된 전체 파일을 한번에 반영
+git commit -m "메시지" // 작업한 내용을 메시지에 기록
+```
+7. 본인 원격 저장소에 올리기
+```
+git push origin minwoonggi
+```
+8. gitgub 서비스에서 Pull Request를 보낸다.
+- 브라우저에서 github 저장소에 접근
+- 브랜치를 작업 브랜치로 변경
+- 브랜치 오른쪽에 있는 "New Pull request" 버튼을 클릭
+- Pull Request 제목은 ```[$미션제목] $이름 미션 제출합니다.``` 형식
+- 작업한 내용을 입력하고 "Create pull request" 버튼을 클릭하여 마무리
